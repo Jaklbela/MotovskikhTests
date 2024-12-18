@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <Button
@@ -13,7 +14,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="67dp"
-        android:text="Button"
+        android:background="@color/button"
+        android:backgroundTint="@color/button"
+        android:text="@string/skeleton_button"
+        android:textAppearance="@style/CustomButtonTextStyle"
+        app:iconTint="@color/button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

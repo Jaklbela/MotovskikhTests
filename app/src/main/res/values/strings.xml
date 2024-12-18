@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Motovskikh_Tests</string>
+    <string name="app_name">Motovskikh Tests</string>
+    <string name="skeleton_button">Human skeleton</string>
 </resources>
