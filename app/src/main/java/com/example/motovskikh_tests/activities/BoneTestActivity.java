@@ -1,9 +1,6 @@
-package com.example.motovskikh_tests;
+package com.example.motovskikh_tests.activities;
 
-import android.annotation.TargetApi;
 import android.content.Intent;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
@@ -12,6 +9,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
+import com.example.motovskikh_tests.R;
 
 
 public class BoneTestActivity extends AppCompatActivity {
@@ -30,6 +30,12 @@ public class BoneTestActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                if (request.getUrl().toString().startsWith("https://motovskikh.ru/")) {
+                    Intent intent = new Intent(BoneTestActivity.this, MainActivity.class);
+                    intent.putExtra("url", request.getUrl());
+                    startActivity(intent);
+                    return true;
+                }
                 Intent intent = new Intent(Intent.ACTION_VIEW, request.getUrl());
                 startActivity( intent );
                 return true;

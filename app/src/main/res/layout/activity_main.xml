@@ -6,20 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
+
+    <com.example.motovskikh_tests.BackgroundPainter
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.motovskikh_tests.BackgroundPainter>
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/buttonGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/semi_transparent_black"
             android:orientation="vertical">
 
             <Button
@@ -34,7 +40,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,7 +57,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -66,7 +74,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,7 +91,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -98,7 +108,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -114,7 +125,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -130,7 +142,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -146,7 +159,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -162,7 +176,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -178,7 +193,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -194,7 +210,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -210,7 +227,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -226,7 +244,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -242,7 +261,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -258,7 +278,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -274,7 +295,8 @@
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:text="@string/skeleton_button"
-                android:textAppearance="@style/CustomTextStyle"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/CasualTextStyle"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -289,7 +311,7 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -304,7 +326,7 @@
             android:layout_marginBottom="25dp"
             android:text="@string/app_name"
             android:textAlignment="viewStart"
-            android:textAppearance="@style/CustomTextStyle"
+            android:textAppearance="@style/CasualTextStyle"
             android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

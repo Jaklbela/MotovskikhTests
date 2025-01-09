@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
     <color name="background">#080808</color>
-    <color name="button">#009da5</color>
-    <color name="button_pressed">#009dc7</color>
+    <color name="text_pressed">#FFFFFFFF</color>
+    <color name="button_pressed">#d220ac</color>
+    <color name="text">#4e9aff</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="green">#8046bd2a</color>
+    <color name="orange">#80de7e18</color>
+    <color name="red">#80fa3a3a</color>
+    <color name="blue">#80288eff</color>
 </resources>

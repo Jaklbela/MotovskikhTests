@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Motovskikh Tests</string>
     <string name="skeleton_button">Human skeleton</string>
-    <string name="loading">Loading...</string>
 </resources>
