@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Тесты Мотовских</string>
     <string name="skeleton_button">Скелет человека</string>
+    <string name="feedback_button">Связаться с нами</string>
+    <string name="bone_test_link">https://motovskikh.ru/skeleton/</string>
+    <string name="feedback_link">https://motovskikh.ru/dazer/</string>
 </resources>

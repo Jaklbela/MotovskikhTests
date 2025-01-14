@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.BoneTestActivity">
+            android:name=".activities.TestActivity">
         </activity>
     </application>
 

@@ -9,16 +9,19 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.example.motovskikh_tests.R;
 
 
-public class BoneTestActivity extends AppCompatActivity {
+public class TestActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bone_test);
+        setContentView(R.layout.activity_test);
+
+        Intent intent = getIntent();
+        String urlString = intent.getStringExtra("url");
 
         WebView webView = findViewById(R.id.main_web_view);
 
@@ -31,7 +34,7 @@ public class BoneTestActivity extends AppCompatActivity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 if (request.getUrl().toString().startsWith("https://motovskikh.ru/")) {
-                    Intent intent = new Intent(BoneTestActivity.this, MainActivity.class);
+                    Intent intent = new Intent(TestActivity.this, MainActivity.class);
                     intent.putExtra("url", request.getUrl());
                     startActivity(intent);
                     return true;
@@ -41,7 +44,7 @@ public class BoneTestActivity extends AppCompatActivity {
                 return true;
             }
         });
-        webView.loadUrl("https://motovskikh.ru/skeleton/");
+        webView.loadUrl(urlString);
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override

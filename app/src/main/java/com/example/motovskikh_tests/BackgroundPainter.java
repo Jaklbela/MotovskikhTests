@@ -2,7 +2,6 @@ package com.example.motovskikh_tests;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
@@ -53,7 +52,7 @@ public class BackgroundPainter extends View {
         float x = random.nextInt(width);
         float y = random.nextInt(height);
 
-        float size = 350 + random.nextInt(100);
+        float size = 100 + random.nextInt(500);
 
         paint.setColor(getResources().getColor(getRandomColor()));
 
@@ -68,8 +67,8 @@ public class BackgroundPainter extends View {
             case 2:
                 Path path = new Path();
                 path.moveTo(x, y);
-                path.lineTo(x - size / 2, y + size);
-                path.lineTo(x + size / 2, y + size);
+                path.lineTo(x - size / 1.73f, y + size);
+                path.lineTo(x + size / 1.73f, y + size);
                 path.close();
                 canvas.drawPath(path, paint);
                 break;
@@ -77,7 +76,7 @@ public class BackgroundPainter extends View {
     }
 
     private int getRandomColor() {
-        int[] colors = {R.color.red, R.color.green, R.color.blue, R.color.orange};
+        int[] colors = {R.color.red, R.color.green, R.color.yellow, R.color.blue};
         int choice = random.nextInt(4);
         return colors[choice];
     }

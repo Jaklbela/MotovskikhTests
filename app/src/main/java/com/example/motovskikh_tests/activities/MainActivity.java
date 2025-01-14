@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.motovskikh_tests.R;
 
 public class MainActivity extends AppCompatActivity {
+    Button feedbackButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +24,16 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < rootView.getChildCount(); i++) {
             View child = rootView.getChildAt(i);
             if (child instanceof  Button) {
-                child.setOnTouchListener(touchListener);
+                child.setOnTouchListener(touchBoneTestListener);
             }
         }
+
+        feedbackButton = findViewById(R.id.feedbackButton);
+        feedbackButton.setOnTouchListener(touchFeedbackListener);
     }
 
     @SuppressLint("ClickableViewAccessibility")
-    View.OnTouchListener touchListener = (view, event) -> {
+    View.OnTouchListener touchBoneTestListener = (view, event) -> {
         Button button = (Button) view;
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
@@ -39,12 +43,38 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case MotionEvent.ACTION_UP:
-            case MotionEvent.ACTION_CANCEL:
-                Intent intent = new Intent(MainActivity.this, BoneTestActivity.class);
+                String url = getResources().getString(R.string.bone_test_link);
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                intent.putExtra("url", url);
                 startActivity(intent);
+            case MotionEvent.ACTION_CANCEL:
                 button.setBackgroundResource(R.drawable.button_background);
                 button.setBackgroundColor(getResources().getColor(R.color.transparent));
                 button.setTextAppearance(R.style.CasualTextStyle);
+                return true;
+        }
+        return false;
+    };
+
+    @SuppressLint("ClickableViewAccessibility")
+    View.OnTouchListener touchFeedbackListener = (view, event) -> {
+        Button button = (Button) view;
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                button.setBackgroundResource(R.drawable.button_background);
+                button.setBackgroundColor(getResources().getColor(R.color.green));
+                button.setTextAppearance(R.style.FeedbackTextPressedStyle);
+                return true;
+
+            case MotionEvent.ACTION_UP:
+                String url = getResources().getString(R.string.bone_test_link);
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                intent.putExtra("url", url);
+                startActivity(intent);
+            case MotionEvent.ACTION_CANCEL:
+                button.setBackgroundResource(R.drawable.button_background);
+                button.setBackgroundColor(getResources().getColor(R.color.transparent));
+                button.setTextAppearance(R.style.FeedbackTextStyle);
                 return true;
         }
         return false;
