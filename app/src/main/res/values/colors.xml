@@ -4,7 +4,7 @@
     <color name="background">#080808</color>
     <color name="text_pressed">#FFFFFFFF</color>
     <color name="button_pressed">#d220ac</color>
-    <color name="text">#4e9aff</color>
+    <color name="text">#02f0fe</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="semi_transparent_black">#B3000000</color>
     <color name="green">#2dc4b6</color>

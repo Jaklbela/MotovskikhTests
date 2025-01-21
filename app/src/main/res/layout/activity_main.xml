@@ -9,6 +9,7 @@
     tools:context=".activities.MainActivity">
 
     <com.example.motovskikh_tests.BackgroundPainter
+        android:id="@+id/backgroundPainter"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </com.example.motovskikh_tests.BackgroundPainter>
@@ -412,7 +413,7 @@
                         android:paddingEnd="0dp"
                         android:text="@string/feedback_button"
                         android:textAlignment="viewStart"
-                        android:textAppearance="@style/FeedbackTextStyle"
+                        android:textAppearance="@style/CasualTextStyle"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
                 </LinearLayout>

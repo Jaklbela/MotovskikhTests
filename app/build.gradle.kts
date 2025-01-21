@@ -6,6 +6,10 @@ android {
     namespace = "com.example.motovskikh_tests"
     compileSdk = 34
 
+    viewBinding {
+        enable = true
+    }
+
     defaultConfig {
         applicationId = "com.example.motovskikh_tests"
         minSdk = 24
@@ -31,6 +35,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation(libs.appcompat)
@@ -40,4 +45,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(libs.mobileads)
 }
