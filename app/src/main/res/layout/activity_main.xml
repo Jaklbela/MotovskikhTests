@@ -89,7 +89,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/bone_test9"
+                    android:id="@+id/eye_test"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -98,14 +98,14 @@
                     android:background="@drawable/button_background"
                     android:paddingStart="16dp"
                     android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
+                    android:text="@string/eye_button"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/CasualTextStyle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/bone_test10"
+                    android:id="@+id/teeth_test"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -114,14 +114,14 @@
                     android:background="@drawable/button_background"
                     android:paddingStart="16dp"
                     android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
+                    android:text="@string/teeth_button"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/CasualTextStyle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/bone_test11"
+                    android:id="@+id/hand_test"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -130,14 +130,14 @@
                     android:background="@drawable/button_background"
                     android:paddingStart="16dp"
                     android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
+                    android:text="@string/hand_button"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/CasualTextStyle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/bone_test12"
+                    android:id="@+id/neuron_test"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -146,14 +146,14 @@
                     android:background="@drawable/button_background"
                     android:paddingStart="16dp"
                     android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
+                    android:text="@string/neuron_button"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/CasualTextStyle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/bone_test13"
+                    android:id="@+id/nephron_test"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -162,14 +162,14 @@
                     android:background="@drawable/button_background"
                     android:paddingStart="16dp"
                     android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
+                    android:text="@string/nephron_button"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/CasualTextStyle"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/bone_test14"
+                    android:id="@+id/scull_test"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -178,215 +178,7 @@
                     android:background="@drawable/button_background"
                     android:paddingStart="16dp"
                     android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test18"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test19"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test20"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test27"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test26"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test25"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test24"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test23"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test22"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
-                    android:textAlignment="viewStart"
-                    android:textAppearance="@style/CasualTextStyle"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/bone_test21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:background="@drawable/button_background"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/skeleton_button"
+                    android:text="@string/scull_button"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/CasualTextStyle"
                     app:layout_constraintStart_toStartOf="parent"

@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.motovskikh_tests.R;
 
 
-public class TestActivity extends AppCompatActivity {
+public class WebsiteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class TestActivity extends AppCompatActivity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 if (request.getUrl().toString().startsWith("https://motovskikh.ru/")) {
-                    Intent intent = new Intent(TestActivity.this, MainActivity.class);
+                    Intent intent = new Intent(WebsiteActivity.this, MainActivity.class);
                     intent.putExtra("url", request.getUrl());
                     startActivity(intent);
                     return true;

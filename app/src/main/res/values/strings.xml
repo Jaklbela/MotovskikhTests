@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Motovskikh Tests</string>
     <string name="skeleton_button">Human skeleton</string>
+    <string name="eye_button">Human eye</string>
+    <string name="teeth_button">Human teeth</string>
+    <string name="hand_button">Human hand</string>
+    <string name="neuron_button">Human neuron</string>
+    <string name="nephron_button">Human nephron</string>
+    <string name="scull_button">Human scull</string>
     <string name="feedback_button">Contact us</string>
     <string name="bone_test_link">https://motovskikh.ru/en/skeleton/</string>
     <string name="feedback_link">https://motovskikh.ru/en/dazer/</string>

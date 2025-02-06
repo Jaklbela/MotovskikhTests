@@ -1,7 +1,6 @@
 package com.example.motovskikh_tests.activities;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -15,8 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.motovskikh_tests.R;
 import com.yandex.mobile.ads.common.AdError;
-import com.yandex.mobile.ads.common.AdInfo;
-import com.yandex.mobile.ads.common.AdRequest;
 import com.yandex.mobile.ads.common.AdRequestConfiguration;
 import com.yandex.mobile.ads.common.AdRequestError;
 import com.yandex.mobile.ads.common.ImpressionData;
@@ -132,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
             case MotionEvent.ACTION_UP:
                 String url = getResources().getString(R.string.bone_test_link);
-                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                Intent intent = new Intent(MainActivity.this, WebsiteActivity.class);
                 intent.putExtra("url", url);
                 startActivity(intent);
                 showAd();
@@ -152,18 +149,18 @@ public class MainActivity extends AppCompatActivity {
             case MotionEvent.ACTION_DOWN:
                 button.setBackgroundResource(R.drawable.button_background);
                 button.setBackgroundColor(getResources().getColor(R.color.green));
-                button.setTextAppearance(R.style.FeedbackTextPressedStyle);
+                button.setTextAppearance(R.style.PressedTextStyle);
                 return true;
 
             case MotionEvent.ACTION_UP:
-                String url = getResources().getString(R.string.bone_test_link);
-                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                String url = getResources().getString(R.string.feedback_link);
+                Intent intent = new Intent(MainActivity.this, WebsiteActivity.class);
                 intent.putExtra("url", url);
                 startActivity(intent);
             case MotionEvent.ACTION_CANCEL:
                 button.setBackgroundResource(R.drawable.button_background);
                 button.setBackgroundColor(getResources().getColor(R.color.transparent));
-                button.setTextAppearance(R.style.FeedbackTextStyle);
+                button.setTextAppearance(R.style.CasualTextStyle);
                 return true;
         }
         return false;

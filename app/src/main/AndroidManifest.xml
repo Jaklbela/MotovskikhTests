@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.TestActivity">
+            android:name=".activities.WebsiteActivity">
         </activity>
         <activity
             android:name=".activities.InterstitialAdActivity">
