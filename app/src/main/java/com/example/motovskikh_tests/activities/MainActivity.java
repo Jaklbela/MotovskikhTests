@@ -7,12 +7,14 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.motovskikh_tests.R;
+import com.example.motovskikh_tests.TestAdapter;
 import com.yandex.mobile.ads.common.AdError;
 import com.yandex.mobile.ads.common.AdRequestConfiguration;
 import com.yandex.mobile.ads.common.AdRequestError;
@@ -25,11 +27,12 @@ import com.yandex.mobile.ads.interstitial.InterstitialAdLoadListener;
 import com.yandex.mobile.ads.interstitial.InterstitialAdLoader;
 
 public class MainActivity extends AppCompatActivity {
-    Button feedbackButton;
     @Nullable
     private InterstitialAd mInterstitialAd = null;
     @Nullable
     private InterstitialAdLoader mInterstitialAdLoader = null;
+
+    private static TestAdapter testAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,16 +43,25 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        ViewGroup rootView = findViewById(R.id.buttonGroup);
-        for (int i = 0; i < rootView.getChildCount(); i++) {
-            View child = rootView.getChildAt(i);
-            if (child instanceof Button) {
-                child.setOnTouchListener(touchBoneTestListener);
-            }
-        }
+        String[] tests = getResources().getStringArray(R.array.tests);
 
-        feedbackButton = findViewById(R.id.feedbackButton);
-        feedbackButton.setOnTouchListener(touchFeedbackListener);
+        testAdapter = new TestAdapter(this, tests);
+        ListView list = findViewById(R.id.testLists);
+        list.setAdapter(testAdapter);
+
+        list.setOnItemClickListener((parent, view, position, id) -> {
+            String selectedItem = tests[position];
+            String url = getTestUrl(selectedItem);
+
+            testAdapter.setSelectedPosition(position);
+
+            Intent intent = new Intent(MainActivity.this, WebsiteActivity.class);
+            intent.putExtra("url", url);
+            startActivity(intent);
+            if (!url.equals(getResources().getString(R.string.feedback_link))) {
+                showAd();
+            }
+        });
 
         mInterstitialAdLoader = new InterstitialAdLoader(this);
         mInterstitialAdLoader.setAdLoadListener(new InterstitialAdLoadListener() {
@@ -66,6 +78,38 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         loadInterstitialAd();
+    }
+
+    public static void changeButtonAppearance() {
+        testAdapter.setSelectedPosition(-1);
+    }
+
+    private String getTestUrl(String selectedItem) {
+        if (selectedItem.equals(getResources().getString(R.string.skeleton_button))) {
+            return getResources().getString(R.string.skeleton_test_link);
+        }
+        if (selectedItem.equals(getResources().getString(R.string.eye_button))) {
+            return getResources().getString(R.string.eye_test_link);
+        }
+        if (selectedItem.equals(getResources().getString(R.string.hand_button))) {
+            return getResources().getString(R.string.hand_test_link);
+        }
+        if (selectedItem.equals(getResources().getString(R.string.nephron_button))) {
+            return getResources().getString(R.string.nephron_test_link);
+        }
+        if (selectedItem.equals(getResources().getString(R.string.neuron_button))) {
+            return getResources().getString(R.string.neuron_test_link);
+        }
+        if (selectedItem.equals(getResources().getString(R.string.skull_button))) {
+            return getResources().getString(R.string.skull_test_link);
+        }
+        if (selectedItem.equals(getResources().getString(R.string.teeth_button))) {
+            return getResources().getString(R.string.teeth_test_link);
+        }
+        if (selectedItem.equals(getResources().getString(R.string.feedback_button))) {
+            return getResources().getString(R.string.feedback_link);
+        }
+        return "";
     }
 
     private void loadInterstitialAd() {
@@ -115,56 +159,6 @@ public class MainActivity extends AppCompatActivity {
             mInterstitialAd.show(this);
         }
     }
-
-
-    @SuppressLint("ClickableViewAccessibility")
-    View.OnTouchListener touchBoneTestListener = (view, event) -> {
-        Button button = (Button) view;
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-                button.setBackgroundResource(R.drawable.button_background);
-                button.setBackgroundColor(getResources().getColor(R.color.button_pressed));
-                button.setTextAppearance(R.style.PressedTextStyle);
-                return true;
-
-            case MotionEvent.ACTION_UP:
-                String url = getResources().getString(R.string.bone_test_link);
-                Intent intent = new Intent(MainActivity.this, WebsiteActivity.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
-                showAd();
-            case MotionEvent.ACTION_CANCEL:
-                button.setBackgroundResource(R.drawable.button_background);
-                button.setBackgroundColor(getResources().getColor(R.color.transparent));
-                button.setTextAppearance(R.style.CasualTextStyle);
-                return true;
-        }
-        return false;
-    };
-
-    @SuppressLint("ClickableViewAccessibility")
-    View.OnTouchListener touchFeedbackListener = (view, event) -> {
-        Button button = (Button) view;
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-                button.setBackgroundResource(R.drawable.button_background);
-                button.setBackgroundColor(getResources().getColor(R.color.green));
-                button.setTextAppearance(R.style.PressedTextStyle);
-                return true;
-
-            case MotionEvent.ACTION_UP:
-                String url = getResources().getString(R.string.feedback_link);
-                Intent intent = new Intent(MainActivity.this, WebsiteActivity.class);
-                intent.putExtra("url", url);
-                startActivity(intent);
-            case MotionEvent.ACTION_CANCEL:
-                button.setBackgroundResource(R.drawable.button_background);
-                button.setBackgroundColor(getResources().getColor(R.color.transparent));
-                button.setTextAppearance(R.style.CasualTextStyle);
-                return true;
-        }
-        return false;
-    };
 
     @Override
     protected void onDestroy() {

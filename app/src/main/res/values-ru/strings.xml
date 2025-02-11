@@ -1,13 +1,21 @@
 <resources>
     <string name="app_name">Тесты Мотовских</string>
-    <string name="skeleton_button">Скелет человека</string>
-    <string name="eye_button">Глаз человека</string>
-    <string name="teeth_button">Зуб человека</string>
-    <string name="hand_button">Рука человека</string>
-    <string name="neuron_button">Нейрон человека</string>
-    <string name="nephron_button">Нефрон человека</string>
-    <string name="scull_button">Череп человека</string>
+    <string name="skeleton_button">Скелет</string>
+    <string name="eye_button">Глаз</string>
+    <string name="teeth_button">Зуб</string>
+    <string name="hand_button">Рука</string>
+    <string name="neuron_button">Нейрон</string>
+    <string name="nephron_button">Нефрон</string>
+    <string name="skull_button">Череп</string>
+    <string name="tests_theme">Биология человека</string>
     <string name="feedback_button">Связаться с нами</string>
-    <string name="bone_test_link">https://motovskikh.ru/skeleton/</string>
+    <string name="skeleton_test_link">https://motovskikh.ru/skeleton/</string>
+    <string name="eye_test_link">https://motovskikh.ru/eye/</string>
+    <string name="teeth_test_link">https://motovskikh.ru/tooth/</string>
+    <string name="hand_test_link">https://motovskikh.ru/hand/</string>
+    <string name="neuron_test_link">https://motovskikh.ru/neuron/</string>
+    <string name="nephron_test_link">https://motovskikh.ru/nephron/</string>
+    <string name="skull_test_link">https://motovskikh.ru/skull/</string>
     <string name="feedback_link">https://motovskikh.ru/dazer/</string>
+    <string name="warning">Наше приложение полностью бесплатно, но иногда вы будете видеть рекламу</string>
 </resources>

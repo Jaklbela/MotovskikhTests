@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tests">
+        <item>@string/skeleton_button</item>
+        <item>@string/eye_button</item>
+        <item>@string/hand_button</item>
+        <item>@string/skull_button</item>
+        <item>@string/teeth_button</item>
+        <item>@string/neuron_button</item>
+        <item>@string/nephron_button</item>
+        <item>@string/feedback_button</item>
+    </string-array>
+</resources>

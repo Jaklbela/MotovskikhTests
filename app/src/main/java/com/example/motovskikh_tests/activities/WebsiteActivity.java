@@ -22,6 +22,8 @@ public class WebsiteActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String urlString = intent.getStringExtra("url");
+        MainActivity.changeButtonAppearance();
+
 
         WebView webView = findViewById(R.id.main_web_view);
 

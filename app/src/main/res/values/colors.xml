@@ -3,7 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="background">#080808</color>
     <color name="text_pressed">#FFFFFFFF</color>
-    <color name="button_pressed">#d220ac</color>
     <color name="text">#02f0fe</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="semi_transparent_black">#B3000000</color>
@@ -11,4 +10,6 @@
     <color name="yellow">#ffbf69</color>
     <color name="red">#ff3266</color>
     <color name="blue">#20a4f3</color>
+    <color name="orange">#fd7b48</color>
+    <color name="magenta">#eb30a3</color>
 </resources>
