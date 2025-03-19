@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.motovskikh_tests"
-    compileSdk = 34
+    namespace = "com.release.motovskikh_tests"
+    compileSdk = 35
 
     viewBinding {
         enable = true
     }
 
     defaultConfig {
-        applicationId = "com.example.motovskikh_tests"
+        applicationId = "com.release.motovskikh_tests"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -27,6 +27,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {

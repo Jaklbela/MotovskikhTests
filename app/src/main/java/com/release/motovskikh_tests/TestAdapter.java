@@ -1,8 +1,6 @@
-package com.example.motovskikh_tests;
+package com.release.motovskikh_tests;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 
-import java.sql.Time;
 import java.util.Random;
 
 public class TestAdapter extends ArrayAdapter<String> {

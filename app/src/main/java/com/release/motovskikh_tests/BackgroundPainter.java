@@ -1,4 +1,4 @@
-package com.example.motovskikh_tests;
+package com.release.motovskikh_tests;
 
 import android.content.Context;
 import android.graphics.Canvas;

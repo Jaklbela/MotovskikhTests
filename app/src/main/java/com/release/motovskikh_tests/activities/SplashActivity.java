@@ -1,11 +1,11 @@
-package com.example.motovskikh_tests.activities;
+package com.release.motovskikh_tests.activities;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.motovskikh_tests.R;
+import com.release.motovskikh_tests.R;
 
 public class SplashActivity extends Activity {
     private static final int SPLASH_TIME = 1000;

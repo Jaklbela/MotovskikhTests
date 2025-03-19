@@ -20,7 +20,7 @@
             android:value="false" />
         <meta-data
             android:name="com.yandex.mobile.ads.APPLICATION_ID"
-            android:value="R-M-13774252-1" />
+            android:value="R-M-14638724-1" />
         <activity
             android:name=".activities.SplashActivity"
             android:exported="true">

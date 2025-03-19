@@ -1,20 +1,15 @@
-package com.example.motovskikh_tests.activities;
+package com.release.motovskikh_tests.activities;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.motovskikh_tests.R;
-import com.example.motovskikh_tests.TestAdapter;
+import com.release.motovskikh_tests.R;
+import com.release.motovskikh_tests.TestAdapter;
 import com.yandex.mobile.ads.common.AdError;
 import com.yandex.mobile.ads.common.AdRequestConfiguration;
 import com.yandex.mobile.ads.common.AdRequestError;
@@ -115,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadInterstitialAd() {
         if (mInterstitialAdLoader != null ) {
             final AdRequestConfiguration adRequestConfiguration =
-                    new AdRequestConfiguration.Builder("R-M-13774252-1").build();
+                    new AdRequestConfiguration.Builder("R-M-14638724-1").build();
             mInterstitialAdLoader.loadAd(adRequestConfiguration);
         }
     }

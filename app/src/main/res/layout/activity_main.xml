@@ -8,11 +8,11 @@
     android:background="@color/background"
     tools:context=".activities.MainActivity">
 
-    <com.example.motovskikh_tests.BackgroundPainter
+    <com.release.motovskikh_tests.BackgroundPainter
         android:id="@+id/backgroundPainter"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </com.example.motovskikh_tests.BackgroundPainter>
+    </com.release.motovskikh_tests.BackgroundPainter>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -39,6 +39,7 @@
             android:id="@+id/testsTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:text="@string/tests_theme"
             android:textAppearance="@style/HeadingTextStyle"
             app:layout_constraintStart_toStartOf="parent"

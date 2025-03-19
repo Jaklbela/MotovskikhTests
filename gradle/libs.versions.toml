@@ -8,6 +8,8 @@ material = "1.10.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 mobileAds = "7.9.0"
+mobileadsMediation = "7.10.1.0"
+mobileadsMytarget = "5.22.1.6"
 mobileadsVersion = "7.9.0"
 playServicesAds = "23.6.0"
 coreSplashscreen = "1.2.0-alpha02"
@@ -19,10 +21,12 @@ ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitV
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+activity = { group = "androidx.activity", name = "activity", version = "1.10.0" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 mobile-ads = { module = "com.yandex.android:mobile-ads", version = "placeholder" }
 mobileads = { module = "com.yandex.android:mobileads", version.ref = "mobileadsVersion" }
+mobileads-mediation = { module = "com.yandex.android:mobileads-mediation", version.ref = "mobileadsMediation" }
+mobileads-mytarget = { module = "com.yandex.ads.mediation:mobileads-mytarget", version.ref = "mobileadsMytarget" }
 play-services-ads = { group = "com.google.android.gms", name = "play-services-ads", version.ref = "playServicesAds" }
 core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version = "placeholder" }
 androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplashscreenVersion" }

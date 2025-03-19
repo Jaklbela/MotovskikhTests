@@ -1,4 +1,4 @@
-package com.example.motovskikh_tests.activities;
+package com.release.motovskikh_tests.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.motovskikh_tests.R;
+import com.release.motovskikh_tests.R;
 
 
 public class WebsiteActivity extends AppCompatActivity {
