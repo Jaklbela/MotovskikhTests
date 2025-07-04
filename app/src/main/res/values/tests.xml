@@ -8,6 +8,8 @@
         <item>@string/teeth_button</item>
         <item>@string/neuron_button</item>
         <item>@string/nephron_button</item>
+        <item>@string/heart_button</item>
+        <item>@string/ear_button</item>
         <item>@string/feedback_button</item>
     </string-array>
 </resources>

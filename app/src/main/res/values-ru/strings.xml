@@ -3,10 +3,12 @@
     <string name="skeleton_button">Скелет</string>
     <string name="eye_button">Глаз</string>
     <string name="teeth_button">Зуб</string>
-    <string name="hand_button">Рука</string>
+    <string name="hand_button">Кисть</string>
     <string name="neuron_button">Нейрон</string>
     <string name="nephron_button">Нефрон</string>
     <string name="skull_button">Череп</string>
+    <string name="heart_button">Сердце</string>
+    <string name="ear_button">Ухо</string>
     <string name="tests_theme">Биология человека</string>
     <string name="feedback_button">Связаться с нами</string>
     <string name="skeleton_test_link">https://motovskikh.ru/skeleton/</string>

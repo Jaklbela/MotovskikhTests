@@ -7,6 +7,8 @@
     <string name="neuron_button">A neuron</string>
     <string name="nephron_button">A nephron</string>
     <string name="skull_button">A skull</string>
+    <string name="heart_button">A heart</string>
+    <string name="ear_button">An ear</string>
     <string name="tests_theme">Human biology</string>
     <string name="feedback_button">Contact us</string>
     <string name="skeleton_test_link">https://motovskikh.ru/en/skeleton/</string>
